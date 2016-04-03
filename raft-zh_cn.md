@@ -155,7 +155,7 @@ Raft 通过选举一个高贵的领导人，然后给予他全部的管理复制
 所有服务器：
 
 * 如果`commitIndex > lastApplied`，那么就 lastApplied 加一，并把`log[lastApplied]`应用到状态机中（5.3 节）
-* 如果接收到的 RPC 请求中，任期号`T > currentTerm`，那么就令 currentTerm 等于 T，并切换状态为跟随者（5.1 节）
+* 如果RPC的请求或者响应中存在任期号T，且`T > currentTerm`，那么就令 currentTerm 等于 T，并切换状态为跟随者（5.1 节）
 
 跟随者（5.2 节）：
 
