@@ -113,6 +113,7 @@ Raft 通过选举一个高贵的领导人，然后给予他全部的管理复制
 |term| 领导人的任期号|
 |leaderId| 领导人的 Id，以便于跟随者重定向请求|
 |prevLogIndex|新的日志条目紧随之前的索引值|
+|prevLogTerm|prevLogIndex 条目的任期号|
 |entries[]|准备存储的日志条目（表示心跳时为空；一次性发送多个是为了提高效率）
 |leaderCommit|领导人已经提交的日志的索引值|
 
