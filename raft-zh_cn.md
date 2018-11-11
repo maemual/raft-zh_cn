@@ -41,7 +41,7 @@
 
 |分类|作用目的|例子|利弊|
 |-------|------|------|------|
-|弱一致性| 最终一致性|DNS(域名解析服务器)/Goossip|[Cassndra协议](https://en.wikipedia.org/wiki/Cassandra)|刚开始读不到,最终会读取到结果|
+|弱一致性| 最终一致性|DNS(域名解析服务器)/Goossip[Cassndra协议](https://en.wikipedia.org/wiki/Cassandra)|刚开始读不到,最终会读取到结果|
 |强一致性 | 同步|Paxos Raft(multi-paxos)ZAB(multi-paxos)||
 
 ## 解决的问题
