@@ -1,4 +1,22 @@
 # 寻找一种易于理解的一致性算法（扩展版）
+---
+## 什么是一致性(CAP Theorem)?
+* 对于一个分布式系统，不能同时满足一下三点：
+
+ - 一致性``Consistency``（出现故障需牺牲可用性） 
+ - 可用性``Availability``如阿里/腾讯云的保障99.999999999% （9个9） 
+ - 分区容错性``PartitionTolerance``（一个系统有多个节点，开始各个节点正常，出现断网等故障/各地域系统正常但是数据不一致出现分区）
+ 
+ 
+##一致性模型
+|分类|作用目的|例子|利弊|
+|-------|------|------|
+|弱一致性| 最终一致性|DNS(域名解析服务器)/Goossip|[Cassndra协议](https://en.wikipedia.org/wiki/Cassandra)|刚开始读不到,最终会读取到结果|
+|强一致性 | 同步|Paxos Raft(multi-paxos)ZAB(multi-paxos)||
+
+## 解决的问题
+数据不能存放在单个节点上。
+分布式系统对容错性``Fault-tolorence``的一般解决方案是``state machine replication``
 
 ## 摘要
 
