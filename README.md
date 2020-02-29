@@ -6,5 +6,5 @@
 
 [英文论文](https://github.com/ongardie/dissertation/blob/master/stanford.pdf)
 
-[中文翻译](https://github.com/LebronAl/raft-zh_cn/blob/master/raft-zh_cn.md)
+[中文翻译](https://github.com/LebronAl/raft-zh_cn/blob/master/raft-thesis-zh_cn.md)
 
